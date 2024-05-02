@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clients.css">
+    <title>Listagem de Clientes</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./img/logo.png" alt="Logomarca do Petshop" height="60">
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="clients.html" class="active">Clientes</a>
+            <a href="products.html">Produtos</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Clientes Cadastrados</h1>
+        <button onclick="deleteAllClients()" class="delete-all-btn">Excluir Todos os Clientes</button>
+        <div id="clientCards" class="cards-container"></div>
+    </div>
+
+    <script src="clients.js"></script>
+</body>
+</html>

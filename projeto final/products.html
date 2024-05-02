@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="products.css">
+    <title>Produtos para Pets</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./img/logo.png" alt="Logomarca do Petshop" height="60">
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="clients.html">Clientes</a>
+            <a href="products.html" class="active">Produtos</a>
+        </div>
+    </nav>
+    <div class="shopping-cart-container">
+        <div id="cartItems" class="cart-container"></div>
+        <button onclick="finalizePurchase()" class="finalize-btn">Finalizar Compra</button>
+    </div>
+    <div class="container">
+        <h1>Produtos Disponíveis</h1>
+        <div id="productList" class="product-container"></div>
+    </div>
+    
+    <div id="purchaseModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Compra finalizada com sucesso!</p>
+        </div>
+    </div>
+    <script src="products.js"></script>
+</body>
+</html>
